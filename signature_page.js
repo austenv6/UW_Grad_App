@@ -4,7 +4,6 @@
     <script><![CDATA[
     $(document).ready(function () {
       if ($("p:contains('Date Signed')").length > 0) {
-          alert('look into this');
           $('input[name="signature"]').show();
           $('#i_apply').prop('checked', true);
           $('#my_work').prop('checked', true);
@@ -16,12 +15,10 @@
         $('input[type="checkbox"]').click(function () {
           var numUnchecked = $('input:checkbox:not(":checked")').length;
           if (numUnchecked > 0) {
-            alert("the number unchecked is: " + numUnchecked);
             $('input[name="signature"]').hide();
             $('button').hide();
           }
           else  {
-            alert("the number unchecked is: " + numUnchecked);
             $('input[name="signature"]').show();
             $('button').show();
          }
@@ -32,7 +29,7 @@
   </head>
   <body>
     <div class="checkbox-group=">
-      <strong>Please check&#160;boxes below in order to sign&#160;your application. Your application must be signed before submission.</strong><br />
+      <strong>Please check all boxes below in order to sign&#160;your application. Your application must be signed before submission.</strong><br />
       <br />
       <input id="i_apply" name="i_apply" type="checkbox" value="I apply" /> <label for="i_apply">By electronically submitting this application, I hereby apply for admission to the University of Wisconsin-Madison Graduate School.</label><br />
       <br />
