@@ -6,6 +6,7 @@
       if ($("p:contains('Date Signed')").length > 0) {
           $('input[name="signature"]').show();
           $('#i_apply').prop('checked', true);
+          $('#receive_degree').prop('checked', true);
           $('#my_work').prop('checked', true);
           $('#waive_confidentiality').prop('checked', true);
           $('#abide_rules').prop('checked', true);
@@ -32,6 +33,8 @@
       <strong>Please check all boxes below in order to sign&#160;your application. Your application must be signed before submission.</strong><br />
       <br />
       <input id="i_apply" name="i_apply" type="checkbox" value="I apply" /> <label for="i_apply">By electronically submitting this application, I hereby apply for admission to the University of Wisconsin-Madison Graduate School.</label><br />
+      <br />
+      <input id="receive_degree" name="receive_degree" type="checkbox" value="Receive degree" /> <label for="receive_degree">By signing this I confirm I will receive an undergradaute degree before the first day of the semester.</label><br />
       <br />
       <input id="my_work" name="my_work" type="checkbox" value="My work" /> <label for="my_work">I affirm that the documents presented in this application are my own work. I understand that falsification of any kind can result in rejection of my application or my admission being rescinded. All information is correct and complete to the best of my knowledge. Inaccurate information may affect my admission, enrollment, tuition or financial aid status.</label><br />
       <br />
