@@ -1,0 +1,30 @@
+//This is the bit that goes in the empty instructions field.
+<form action="https://test.residency.registrar.wisc.edu/residency-app/application" id="theResForm" method="post" name="theResForm">
+<p>
+</p>
+
+<p>
+</p>
+<input name="admitTermCode" type="hidden" value="{{Application_GS_Term}}" /><input name="admissionApplicationNum" type="hidden" value="IH{{Person-Reference-ID}}{{Application_GS_Term}}" /></form>
+
+//This is for the actual button.
+
+<form action="https://test.residency.registrar.wisc.edu/residency-app/application" id="theResForm" method="post" name="theResForm">
+<p>
+</p>
+
+<p>
+</p>
+<input name="admitTermCode" type="hidden" value="{{Application_GS_Term}}" /><input name="admissionApplicationNum" type="hidden" value="IH{{Person-Reference-ID}}{{Application_GS_Term}}" /><input class="button" name="submit" type="submit" value="Start Residency Application Process" /></form>
+&nbsp; <script>
+
+
+jQuery(document).ready( function() {
+        jQuery('#theResForm').submit( function() {
+
+            var num = jQuery('#theResForm input[name="admissionApplicationNum"]').val();
+
+
+    });
+});
+</script>
