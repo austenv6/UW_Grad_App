@@ -28,3 +28,29 @@ jQuery(document).ready( function() {
     });
 });
 </script>
+
+This is the extra code in the instructions section that isn't actually live - just used as a backup in case source gets deleted.
+​Test Residency App code
+Here is the basic source code for the button on this page. More fields can be added. Info on that can be found here: https://wiki.doit.wisc.edu/confluence/display/ESA/Integrating+with+Residency+Smart+App
+
+<form id="theResForm" method="post" action="https://test.residency.registrar.wisc.edu/residency-app/application">
+
+<p></p>
+<p></p>
+<input name="admitTermCode" value="{{Application_GS_Term}}" type="hidden">
+<input name="admissionApplicationNum" value="IH{{Person-Reference-ID}}{{Application_GS_Term}}" type="hidden">
+<input name="submit" value="Start Residency Application Process" type="submit">
+</form>
+
+ 
+
+<script>
+jQuery(document).ready( function() {
+        jQuery('#theResForm').submit( function() {
+
+            var num = jQuery('#theResForm input[name="admissionApplicationNum"]').val();
+
+
+    });
+});
+</script>​
